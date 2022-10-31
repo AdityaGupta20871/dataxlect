@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+        background-color: #0F0535 ;
+}
+.navbar a{
+    color: beige;
+    font-family: var(--h2);
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 10px;
+}
+.navbar a:hover{
+    background-blend-mode: overlay;
+    background-color: grey;
+    z-index: -5;
+}
+h2{
+    margin: 10px 0;
+    color: beige;
+    font-family: var(--h2);   
+}
+.showcase-form h2{
+    color: grey;
+    text-align: center;
+    font-size: larger;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+
+}
+
+
+h1{  
+    color: beige;
+    font-family: var(--h2);  
+    font-size: 3em;
+    margin: 60px auto;
+}
+.hero{
+    height: 90%;
+    text-align: center;
+    background: url(images/unsplash_wmyE5IBiOmo.png);
+    background-size: cover;
+    mix-blend-mode: hard-light;
+    object-fit: cover;   
+    border-radius: 10px;
+}
+.showcase{
+    height: 400px;
+    background: #0F0535;
+    position: relative;
+}
+.showcase::after,.showcase::before{
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background: white;
+    transform: skewY(-3deg);
+}
+
+
+.showcase-form{
+    position: relative;
+   top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+    justify-self: flex-end;
+}
+
+.form-control{
+    margin: 30px 0;
+}
+input[type=text]{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border: 0;
+    border-bottom: 1px solid grey;
+    width: 100%;
+    height: 50px;
+    padding: 3px;
+    font-size: 15px;
+    border-radius:5px;
+}
+input[type=text]:focus{
+    outline: none;
+}
+
+
+.story{
+  padding-top: 100px;
+    background-color: white;
+}
+.story-heading{
+    max-width: 500px;
+    margin: auto;
+}
+
+.story h3{
+    font-size: 35px;
+    font-weight: 700;
+    font-family: var(--h2);
+}
+.story .grid  h4{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: var(--h1);
+}
+.story .grid  p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: sans-serif;
+    padding: 10px 10px;
+}
+.story-card{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    border-radius: 10px;
+    
+}
+
+.our-team{
+    height: 720px;
+}
+.our-team .container{
+    background-image: url(images/our-team-bg.png);
+    background-repeat: no-repeat;
+    width: 1092px;
+    height: 600px;
+    position: relative;
+    
+    top: 70px;
+}
+
+
+
+.team-card{
+    background: #261B1B;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    background-blend-mode: multiply;
+    height: 40%;
+    width: 200px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.team-card img{
+    border-radius: 15px;
+    width: 220px;
+    height: 100px;
+}
+.team-card h2{
+    padding: 0 10px;
+}
+.team-card p{
+    color: white;  
+}
+
+
+.subteam{
+    background-image: url(images/bg-2.png);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    height: 1000px;
+    position: relative;
+}
+
+.super-toroid{
+position: relative;
+right: 200px;
+bottom: 15px;
+background: url(SuperToroid-Blue-Glossy.png);
+transform: rotate(-178.3deg);
+}
+
+.macbook{
+    position: relative;
+    bottom: 400px;
+    left: 300px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .welcome-container{
+    position: absolute;  
+    
+    mix-blend-mode: hard-light;
+    color: aliceblue;
+    position: absolute;
+    left: 33vw;
+    top: 15vw;
+}
+
+
+img{
+    position: absolute;
+    left: 30vw;
+    height: 100%;
+    width: 40%;
+    top: 400px;
+} */
